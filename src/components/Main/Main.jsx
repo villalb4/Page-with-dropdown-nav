@@ -1,6 +1,10 @@
 import React from "react";
 import s from "./Main.module.css";
 import hero from "../../images/image-hero-desktop.png";
+import databiz from "../../images/client-databiz.svg";
+import audiophile from "../../images/client-audiophile.svg";
+import meet from "../../images/client-meet.svg";
+import maker from "../../images/client-maker.svg";
 
 export default function Main() {
   return (
@@ -10,11 +14,19 @@ export default function Main() {
           <h1>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
           <span className={s.learn}>Learn more</span>
-          <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <section className={s.logos}>
+            <div>
+              <img src={databiz} />
+            </div>
+            <div>
+              <img src={audiophile} />
+            </div>
+            <div>
+              <img src={meet} /> 
+            </div>
+            <div>
+              <img src={maker} />
+            </div>
           </section>
         </section>
 
