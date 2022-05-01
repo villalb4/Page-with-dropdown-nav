@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1225px;
+  padding: 46px 22px 130px 58px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 81px;
+  letter-spacing: -0.015em;
+  max-width: 519px;
+}
+p {
+  font-size: 18px;
+  line-height: 153.5%;
+  letter-spacing: 0.005em;
+  max-width: 460px;
+  margin: 47px 0 66px;
+}
+.hero {
+  max-width: 480px;
+}
+.learn {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 153.5%;
+  letter-spacing: -0.045em;
+  padding: 19px 30.2px 18px 30.25px;
+  border-radius: 13px;
+  color: #fff;
+  background-color: #000;
+}

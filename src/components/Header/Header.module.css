@@ -5,7 +5,7 @@ header {
   color: #686868;
   letter-spacing: -0.05em;
 }
-.header-cont {
+.header_cont {
   display: flex;
   /* gap: px; */
   justify-content: space-between;
@@ -17,7 +17,7 @@ header {
 .logo {
   height: 26.58px;
 }
-.logo-nav {
+.logo_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ nav {
   gap: 40px;
   color: #686868;
 }
-.link-icon {
+.link_icon {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -39,7 +39,7 @@ nav {
   text-decoration: none;
   color: #686868;
 }
-.log-reg {
+.log_reg {
   display: flex;
   gap: 20px;
 }
