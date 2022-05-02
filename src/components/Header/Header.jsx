@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 
 import s from "./Header.module.css"
 import logo from "../../images/logo.svg"
@@ -12,16 +12,20 @@ export default function Header() {
       <header>
         <section className={s.header_cont}>
           <section className={s.logo_nav}>
+
             <NavLink className={s.logo} to="/"><img src={logo} /></NavLink>
+
+            {/*-----dropdown-----*/}
             <nav>
-              <div className={s.link_icon}>
+              <Link to="#" className={s.link_icon}>
                 <span>Features</span>
                 <img src={arrow_down} />
-              </div>
-              <div className={s.link_icon}>
+              </Link>
+              <Link to="#" className={s.link_icon}>
                 <span>Company</span>
                 <img src={arrow_down} />
-              </div>
+              </Link>
+            {/*-------------------*/}
               <NavLink className={s.navlink} to="./">
                 <span>Careers</span>
               </NavLink>

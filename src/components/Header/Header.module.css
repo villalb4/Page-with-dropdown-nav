@@ -16,6 +16,7 @@ header {
 }
 .logo {
   height: 26.58px;
+  padding-top: 4px;
 }
 .logo_nav {
   display: flex;
@@ -34,10 +35,22 @@ nav {
   gap: 8px;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #686868;
+}
+.link_icon:hover,
+.link_icon:focus {
+  color: #000;
+  transition: 0.4s;
 }
 .navlink {
   text-decoration: none;
   color: #686868;
+}
+.navlink:hover,
+.navlink:focus {
+  color: #000;
+  transition: 0.4s;
 }
 .log_reg {
   display: flex;
@@ -52,4 +65,15 @@ nav {
 }
 .reg {
   border-color: #686868;
+}
+.log:hover , 
+.log:focus{
+  color: #000;
+  transition: 0.4s;
+}
+.reg:hover , 
+.reg:focus {
+  color: #000;
+  border-color: #000;
+  transition: 0.4s;
 }

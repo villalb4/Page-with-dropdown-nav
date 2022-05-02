@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import s from "./Main.module.css";
 import hero from "../../images/image-hero-desktop.png";
 import databiz from "../../images/client-databiz.svg";
@@ -13,7 +14,7 @@ export default function Main() {
         <section>
           <h1>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-          <span className={s.learn}>Learn more</span>
+          <Link className={s.learn_link} to="/">Learn more</Link>
           <section className={s.logos}>
             <div>
               <img src={databiz} />
