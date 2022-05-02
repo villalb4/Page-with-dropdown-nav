@@ -1,10 +1,16 @@
 import React from "react";
 import { NavLink , Link} from "react-router-dom";
-
 import s from "./Header.module.css"
 import logo from "../../images/logo.svg"
 import arrow_down from "../../images/icon-arrow-down.svg"
 import arrow_up from "../../images/icon-arrow-up.svg"
+// -----Icons dropdown-----
+import icon1 from "../../images/icon-todo.svg"
+import icon2 from "../../images/icon-calendar.svg"
+import icon3 from "../../images/icon-reminders.svg"
+import icon4 from "../../images/icon-planning.svg"
+
+
 
 export default function Header() {
   return (
@@ -20,6 +26,24 @@ export default function Header() {
               <Link to="#" className={s.link_icon}>
                 <span>Features</span>
                 <img src={arrow_down} />
+                <section className={s.dropdown}>
+                  <Link className={s.drop_list} to="#">
+                    <img src={icon1} />
+                    Todo List
+                  </Link>
+                  <Link className={s.drop_list} to="#">
+                    <img src={icon2} />
+                    Calendar
+                  </Link>
+                  <Link className={s.drop_list} to="#">
+                    <img src={icon3} />
+                    Reminders
+                  </Link>
+                  <Link className={s.drop_list} to="#">
+                    <img src={icon4} />
+                    Planning
+                  </Link>
+                </section>
               </Link>
               <Link to="#" className={s.link_icon}>
                 <span>Company</span>
