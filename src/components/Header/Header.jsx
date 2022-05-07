@@ -25,7 +25,7 @@ export default function Header() {
             <nav>
               <Link to="#" className={s.link_icon}>
                 <span>Features</span>
-                <img src={arrow_down} />
+                <img className={s.drop_icon} src={arrow_down} />
                 <section className={s.dropdown}>
                   <Link className={s.drop_list} to="#">
                     <img src={icon1} />
@@ -47,7 +47,7 @@ export default function Header() {
               </Link>
               <Link to="#" className={s.link_icon}>
                 <span>Company</span>
-                <img src={arrow_down} />
+                <img className={s.drop_icon} src={arrow_down} />
               </Link>
             {/*-------------------*/}
               <NavLink className={s.navlink} to="./">

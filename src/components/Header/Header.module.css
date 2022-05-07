@@ -30,6 +30,9 @@ nav {
   gap: 40px;
   color: #686868;
 }
+#drop_icon {
+  fill: red;
+}
 .link_icon {
   display: flex;
   gap: 8px;
