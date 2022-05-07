@@ -36,6 +36,7 @@ p {
   border-radius: 13px;
   color: #fff;
   background-color: #000;
+  transition: 0.5s;
 }
 .learn_link:hover,
 .learn_link:focus {
