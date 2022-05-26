@@ -1,0 +1,27 @@
+.dropdown {
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 118px;
+  padding: 15px 15px 10px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+  cursor: auto;
+}
+.dropdown.off {
+  opacity: 1;
+  pointer-events: none;
+}
+.drop_list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+}
+.drop_list:hover {
+  background-color: rgba(78, 158, 255, 0.16);
+}

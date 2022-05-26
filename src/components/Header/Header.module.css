@@ -30,7 +30,7 @@ nav {
   gap: 40px;
   color: #686868;
 }
-#drop_icon {
+.drop_icon {
   fill: red;
 }
 .link_icon {
@@ -82,22 +82,4 @@ nav {
   color: #000;
   border-color: #000;
   transition: 0.4s;
-}
-
-.dropdown {
-  display: none;
-  background-color: #fff;
-  position: absolute;
-  top: 60px;
-  left: 118px;
-  padding: 24px 25px 8px 22px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
-}
-.drop_list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  text-decoration: none;
-  margin-bottom: 16px;
 }

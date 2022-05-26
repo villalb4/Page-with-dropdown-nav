@@ -1,18 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink , Link} from "react-router-dom";
 import s from "./Header.module.css"
 import logo from "../../images/logo.svg"
 import arrow_down from "../../images/icon-arrow-down.svg"
-import arrow_up from "../../images/icon-arrow-up.svg"
-// -----Icons dropdown-----
-import icon1 from "../../images/icon-todo.svg"
-import icon2 from "../../images/icon-calendar.svg"
-import icon3 from "../../images/icon-reminders.svg"
-import icon4 from "../../images/icon-planning.svg"
-
+import DropDown from "./DropDown/DropDown"
 
 
 export default function Header() {
+
+  const [dropdown, setDropdown] = useState(false);
+
   return (
     <>
       <header>
@@ -23,28 +20,17 @@ export default function Header() {
 
             {/*-----dropdown-----*/}
             <nav>
-              <Link to="#" className={s.link_icon}>
+              <Link to="#" 
+                className={s.link_icon} 
+                onMouseEnter={() => setDropdown(true)}
+                onMouseLeave={() => setDropdown(false)}
+              >
                 <span>Features</span>
                 <img className={s.drop_icon} src={arrow_down} />
-                <section className={s.dropdown}>
-                  <Link className={s.drop_list} to="#">
-                    <img src={icon1} />
-                    Todo List
-                  </Link>
-                  <Link className={s.drop_list} to="#">
-                    <img src={icon2} />
-                    Calendar
-                  </Link>
-                  <Link className={s.drop_list} to="#">
-                    <img src={icon3} />
-                    Reminders
-                  </Link>
-                  <Link className={s.drop_list} to="#">
-                    <img src={icon4} />
-                    Planning
-                  </Link>
-                </section>
+                {dropdown && <DropDown/>}
+                
               </Link>
+
               <Link to="#" className={s.link_icon}>
                 <span>Company</span>
                 <img className={s.drop_icon} src={arrow_down} />
