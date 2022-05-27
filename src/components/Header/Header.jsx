@@ -36,21 +36,21 @@ export default function Header() {
                 <img className={s.drop_icon} src={arrow_down} />
               </Link>
             {/*-------------------*/}
-              <NavLink className={s.navlink} to="./">
+              <NavLink className={s.navlink} to="#">
                 <span>Careers</span>
               </NavLink>
-              <NavLink className={s.navlink} to="./">
+              <NavLink className={s.navlink} to="#">
                 <span>About</span>
               </NavLink>
             </nav>
           </section>
           
           <section className={s.log_reg}>
-            <NavLink className={s.log} to="/">
+            <NavLink className={s.log} to="#">
               <span>Login</span>
             </NavLink>
 
-            <NavLink className={s.reg} to="/">
+            <NavLink className={s.reg} to="#">
               <span>Register</span>
             </NavLink>
           </section>
