@@ -17,6 +17,7 @@ header {
 .logo {
   height: 26.58px;
   padding-top: 4px;
+  cursor: pointer;
 }
 .logo_nav {
   display: flex;
@@ -51,6 +52,7 @@ nav {
   text-decoration: none;
   color: #686868;
   transition: 0.4s;
+  cursor: pointer;
 }
 .navlink:hover,
 .navlink:focus {
@@ -68,6 +70,7 @@ nav {
   border: 2px solid transparent;
   border-radius: 14px;
   transition: 0.4s;
+  cursor: pointer;
 }
 .reg {
   border-color: #686868;

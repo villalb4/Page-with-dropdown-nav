@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Drop.css";
 // -----Icons dropdown-----
 import icon1 from "../../../images/icon-todo.svg"
@@ -15,22 +14,22 @@ function DropDown() {
       className={drop ? "dropdown" : "dropdown off"}
       onClick={() => setDrop(!drop)}
     >
-      <Link className="drop_list" to="#">
+      <span className="drop_list">
         <img src={icon1} alt="img"/>
         Todo List
-      </Link>
-      <Link className="drop_list" to="#">
+      </span>
+      <span className="drop_list">
         <img src={icon2} alt="img"/>
         Calendar
-      </Link>
-      <Link className="drop_list" to="#">
+      </span>
+      <span className="drop_list">
         <img src={icon3} alt="img"/>
         Reminders
-       </Link>
-      <Link className="drop_list" to="#">
+       </span>
+      <span className="drop_list">
         <img src={icon4} alt="img"/>
         Planning
-      </Link>
+      </span>
     </section>
   )
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink , Link} from "react-router-dom";
 import s from "./Header.module.css"
 import logo from "../../images/logo.svg"
 import arrow_down from "../../images/icon-arrow-down.svg"
@@ -16,11 +15,11 @@ export default function Header() {
         <section className={s.header_cont}>
           <section className={s.logo_nav}>
 
-            <NavLink className={s.logo} to="/"><img src={logo} alt="img"/></NavLink>
+            <span className={s.logo}><img src={logo} alt="img"/></span>
 
             {/*-----dropdown-----*/}
             <nav>
-              <Link to="#" 
+              <span 
                 className={s.link_icon} 
                 onMouseEnter={() => setDropdown(true)}
                 onMouseLeave={() => setDropdown(false)}
@@ -29,30 +28,30 @@ export default function Header() {
                 <img className={s.drop_icon} src={arrow_down} alt="img"/>
                 {dropdown && <DropDown/>}
                 
-              </Link>
+              </span>
 
-              <Link to="#" className={s.link_icon}>
+              <span className={s.link_icon}>
                 <span>Company</span>
                 <img className={s.drop_icon} src={arrow_down} alt="img"/>
-              </Link>
+              </span>
             {/*-------------------*/}
-              <NavLink className={s.navlink} to="#">
+              <span className={s.navlink} >
                 <span>Careers</span>
-              </NavLink>
-              <NavLink className={s.navlink} to="#">
+              </span>
+              <span className={s.navlink}>
                 <span>About</span>
-              </NavLink>
+              </span>
             </nav>
           </section>
           
           <section className={s.log_reg}>
-            <NavLink className={s.log} to="#">
+            <span className={s.log}>
               <span>Login</span>
-            </NavLink>
+            </span>
 
-            <NavLink className={s.reg} to="#">
+            <span className={s.reg}>
               <span>Register</span>
-            </NavLink>
+            </span>
           </section>
         </section>
       </header>

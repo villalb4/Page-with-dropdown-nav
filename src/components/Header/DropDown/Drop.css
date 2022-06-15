@@ -21,6 +21,8 @@
   margin-bottom: 5px;
   padding: 7px 10px 7px 10px;
   border-radius: 5px;
+  cursor: pointer;
+  color: rgb(48, 48, 48);
 }
 .drop_list:hover {
   background-color: rgba(78, 158, 255, 0.16);

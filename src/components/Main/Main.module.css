@@ -37,6 +37,7 @@ p {
   color: #fff;
   background-color: #000;
   transition: 0.5s;
+  cursor: pointer;
 }
 .learn_link:hover,
 .learn_link:focus {
