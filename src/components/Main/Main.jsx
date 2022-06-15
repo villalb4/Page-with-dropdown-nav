@@ -6,7 +6,7 @@ import audiophile from "../../images/client-audiophile.svg";
 import meet from "../../images/client-meet.svg";
 import maker from "../../images/client-maker.svg";
 
-export default function Main() {
+function Main() {
   return (
     <>
       <main>
@@ -37,3 +37,5 @@ export default function Main() {
     </>
   )
 }
+
+export default Main
