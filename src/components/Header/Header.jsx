@@ -16,7 +16,7 @@ export default function Header() {
         <section className={s.header_cont}>
           <section className={s.logo_nav}>
 
-            <NavLink className={s.logo} to="/"><img src={logo} /></NavLink>
+            <NavLink className={s.logo} to="/"><img src={logo} alt="img"/></NavLink>
 
             {/*-----dropdown-----*/}
             <nav>
@@ -26,14 +26,14 @@ export default function Header() {
                 onMouseLeave={() => setDropdown(false)}
               >
                 <span>Features</span>
-                <img className={s.drop_icon} src={arrow_down} />
+                <img className={s.drop_icon} src={arrow_down} alt="img"/>
                 {dropdown && <DropDown/>}
                 
               </Link>
 
               <Link to="#" className={s.link_icon}>
                 <span>Company</span>
-                <img className={s.drop_icon} src={arrow_down} />
+                <img className={s.drop_icon} src={arrow_down} alt="img"/>
               </Link>
             {/*-------------------*/}
               <NavLink className={s.navlink} to="#">

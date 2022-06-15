@@ -16,19 +16,19 @@ function DropDown() {
       onClick={() => setDrop(!drop)}
     >
       <Link className="drop_list" to="#">
-        <img src={icon1} />
+        <img src={icon1} alt="img"/>
         Todo List
       </Link>
       <Link className="drop_list" to="#">
-        <img src={icon2} />
+        <img src={icon2} alt="img"/>
         Calendar
       </Link>
       <Link className="drop_list" to="#">
-        <img src={icon3} />
+        <img src={icon3} alt="img"/>
         Reminders
        </Link>
       <Link className="drop_list" to="#">
-        <img src={icon4} />
+        <img src={icon4} alt="img"/>
         Planning
       </Link>
     </section>

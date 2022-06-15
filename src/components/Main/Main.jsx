@@ -14,19 +14,19 @@ export default function Main() {
         <section>
           <h1>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-          <Link className={s.learn_link} to="/">Learn more</Link>
+          <Link className={s.learn_link} to="#">Learn more</Link>
           <section className={s.logos}>
             <div>
-              <img src={databiz} />
+              <img src={databiz} alt="img"/>
             </div>
             <div>
-              <img src={audiophile} />
+              <img src={audiophile} alt="img"/>
             </div>
             <div>
-              <img src={meet} /> 
+              <img src={meet} alt="img"/> 
             </div>
             <div>
-              <img src={maker} />
+              <img src={maker} alt="img"/>
             </div>
           </section>
         </section>
